@@ -1,7 +1,7 @@
 --liquibase formatted sql
 
 --changeset estudiante:011
-CREATE TABLE IF NOT EXISTS workspace.bronze.stores_raw (
+CREATE TABLE IF NOT EXISTS default.stores_raw (
     store_id STRING,
     store_name STRING,
     city STRING,
@@ -10,4 +10,4 @@ CREATE TABLE IF NOT EXISTS workspace.bronze.stores_raw (
 )
 USING DELTA;
 
---rollback DROP TABLE IF EXISTS workspace.bronze.stores_raw;
+--rollback DROP TABLE IF EXISTS default.stores_raw;

@@ -1,5 +1,6 @@
-CREATE SCHEMA IF NOT EXISTS default;
+--liquibase formatted sql
 
+--changeset estudiante:010
 CREATE TABLE IF NOT EXISTS default.customers_raw (
     customer_id STRING,
     customer_name STRING,
@@ -8,3 +9,5 @@ CREATE TABLE IF NOT EXISTS default.customers_raw (
     country STRING
 )
 USING DELTA;
+
+--rollback DROP TABLE IF EXISTS default.customers_raw;
