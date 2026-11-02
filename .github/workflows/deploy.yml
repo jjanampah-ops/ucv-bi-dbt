@@ -21,9 +21,9 @@ jobs:
           edition: 'community'
 
       - name: Install Databricks extensions
-              run: |
-                liquibase lpm add liquibase-databricks
-                liquibase lpm add databricks-jdbc
+        run: |
+          liquibase lpm add liquibase-databricks
+          liquibase lpm add databricks-jdbc
 
       - name: Validate changelog
         env:
