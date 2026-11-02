@@ -1,0 +1,5 @@
+databaseChangeLog:
+  - include:
+      file: migration/010_create_customers_raw.sql
+  - include:
+      file: migration/011_create_stores_raw.sql
